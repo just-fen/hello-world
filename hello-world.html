@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        :root {
+            font-size: 100%;
+            box-sizing: border-box;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            font-size: 1rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            line-height: 1;
+            min-height: 100vh;
+        }
+
+        .space {
+            width: 100%;
+            height: 100vh;
+            background-image: radial-gradient(circle, #050500, #000);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ozone {
+            width: 50vmin;
+            height: 50vmin;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .world {
+            box-sizing: content-box;
+            width: 50vmin;
+            height: 50vmin;
+            border-radius: 50%;
+            background-image: url('the-world.jpg');
+            background-position: center center;
+            background-size: cover;
+
+            /* Uncomment the animation below */
+            /* animation: spin-the-world 120s infinite linear; */
+        }
+
+        .space-world-text {
+            text-align: center;
+            line-height: 1;
+            margin: 0;
+            font-size: 10vmin;
+            position: absolute;
+            top: 50%;
+            transform: translatey(-50%);
+            width: 100%;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes spin-the-world {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="space">
+        <div class="ozone">
+            <div class="world">
+                <h1 class="space-world-text">hello</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
